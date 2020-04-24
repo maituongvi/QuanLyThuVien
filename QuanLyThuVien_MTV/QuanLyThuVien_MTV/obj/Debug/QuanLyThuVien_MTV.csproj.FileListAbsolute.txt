@@ -1,0 +1,10 @@
+D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\bin\Debug\QuanLyThuVien_MTV.exe.config
+D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\bin\Debug\QuanLyThuVien_MTV.exe
+D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\bin\Debug\QuanLyThuVien_MTV.pdb
+D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.csprojAssemblyReference.cache
+D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.Trangchu.resources
+D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.Properties.Resources.resources
+D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.csproj.GenerateResource.cache
+D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.csproj.CoreCompileInputs.cache
+D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.exe
+D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.pdb
