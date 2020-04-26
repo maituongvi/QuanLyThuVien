@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace QuanLyThuVien_MTV
 {
-    public partial class Trangchu : Form
+    public partial class QLNhanVien : Form
     {
-        public Trangchu()
+        public QLNhanVien()
         {
             InitializeComponent();
         }
 
-        private void btnExit(object sender, EventArgs e)
+        private void QLNhanVien_Load(object sender, EventArgs e)
         {
-            this.Dispose();
+
         }
+
+       
     }
 }

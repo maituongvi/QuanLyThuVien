@@ -44,6 +44,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.exit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -54,7 +55,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.LightCyan;
+            this.label1.ForeColor = System.Drawing.Color.Teal;
             this.label1.Location = new System.Drawing.Point(210, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(512, 78);
@@ -64,6 +65,8 @@
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.MintCream;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.CadetBlue;
             this.button1.ImageIndex = 0;
             this.button1.ImageList = this.imageList1;
@@ -88,7 +91,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.LightBlue;
+            this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label2.Location = new System.Drawing.Point(49, 214);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(145, 24);
@@ -117,7 +120,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.LightBlue;
+            this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label3.Location = new System.Drawing.Point(49, 214);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(166, 24);
@@ -127,6 +130,8 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.MintCream;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ImageIndex = 2;
             this.button2.ImageList = this.imageList1;
             this.button2.Location = new System.Drawing.Point(33, 20);
@@ -148,7 +153,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.LightBlue;
+            this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label4.Location = new System.Drawing.Point(29, 214);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(193, 24);
@@ -158,6 +163,8 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.MintCream;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ImageIndex = 3;
             this.button3.ImageList = this.imageList1;
             this.button3.Location = new System.Drawing.Point(33, 20);
@@ -179,7 +186,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.LightBlue;
+            this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label5.Location = new System.Drawing.Point(29, 214);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(195, 24);
@@ -189,6 +196,8 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.MintCream;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.ImageIndex = 1;
             this.button4.ImageList = this.imageList1;
             this.button4.Location = new System.Drawing.Point(33, 20);
@@ -197,19 +206,35 @@
             this.button4.TabIndex = 1;
             this.button4.UseVisualStyleBackColor = false;
             // 
+            // exit
+            // 
+            this.exit.BackColor = System.Drawing.Color.MintCream;
+            this.exit.FlatAppearance.BorderSize = 0;
+            this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exit.Image = ((System.Drawing.Image)(resources.GetObject("exit.Image")));
+            this.exit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.exit.Location = new System.Drawing.Point(840, 9);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(73, 78);
+            this.exit.TabIndex = 1;
+            this.exit.UseVisualStyleBackColor = false;
+            this.exit.Click += new System.EventHandler(this.btnExit);
+            // 
             // Trangchu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.ClientSize = new System.Drawing.Size(982, 711);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(925, 711);
             this.Controls.Add(this.panel4);
+            this.Controls.Add(this.exit);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.ForeColor = System.Drawing.Color.Teal;
+            this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Trangchu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -239,6 +264,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button exit;
     }
 }
 

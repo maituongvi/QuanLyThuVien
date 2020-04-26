@@ -8,3 +8,4 @@ D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\
 D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.csproj.CoreCompileInputs.cache
 D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.exe
 D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.pdb
+D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.QLNhanVien.resources
