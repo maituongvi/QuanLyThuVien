@@ -16,7 +16,7 @@ namespace QuanLyThuVien_MTV
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new QLNhanVien());
+            Application.Run(new QLSach());
         }
     }
 }

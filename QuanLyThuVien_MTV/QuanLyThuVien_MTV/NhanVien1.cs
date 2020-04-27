@@ -49,6 +49,12 @@ namespace QuanLyThuVien_MTV
             qltvDB.SubmitChanges();
         }
 
+        public NhanVien timNhanVienTheoMa(string id)
+        {
+            NhanVien nv = qltvDB.NhanViens.FirstOrDefault(s => s.MaNhanVien.Equals(id));
+            return nv;
+        }
+
         public void CapNhatNV(string id, string ten, string ns, string dc, string sdt, int bc)
         {
             NhanVien nv = qltvDB.NhanViens.FirstOrDefault(s => s.MaNhanVien.Equals(id));

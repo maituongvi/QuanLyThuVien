@@ -31,19 +31,19 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Trangchu));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnQLSach = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnQLDocGia = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnQLNhanVien = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
+            this.QLMuonTra = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -56,25 +56,26 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Teal;
-            this.label1.Location = new System.Drawing.Point(210, 9);
+            this.label1.Location = new System.Drawing.Point(172, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(512, 78);
+            this.label1.Size = new System.Drawing.Size(630, 78);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Quản lý thư viện";
+            this.label1.Text = "Library Management";
             // 
-            // button1
+            // btnQLSach
             // 
-            this.button1.BackColor = System.Drawing.Color.MintCream;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.CadetBlue;
-            this.button1.ImageIndex = 0;
-            this.button1.ImageList = this.imageList1;
-            this.button1.Location = new System.Drawing.Point(33, 20);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(180, 180);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnQLSach.BackColor = System.Drawing.Color.MintCream;
+            this.btnQLSach.FlatAppearance.BorderSize = 0;
+            this.btnQLSach.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQLSach.ForeColor = System.Drawing.Color.CadetBlue;
+            this.btnQLSach.ImageIndex = 0;
+            this.btnQLSach.ImageList = this.imageList1;
+            this.btnQLSach.Location = new System.Drawing.Point(33, 20);
+            this.btnQLSach.Name = "btnQLSach";
+            this.btnQLSach.Size = new System.Drawing.Size(180, 180);
+            this.btnQLSach.TabIndex = 1;
+            this.btnQLSach.UseVisualStyleBackColor = false;
+            this.btnQLSach.Click += new System.EventHandler(this.btnQLSach_Click);
             // 
             // imageList1
             // 
@@ -92,16 +93,16 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label2.Location = new System.Drawing.Point(49, 214);
+            this.label2.Location = new System.Drawing.Point(24, 214);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 24);
+            this.label2.Size = new System.Drawing.Size(198, 24);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Quản lý sách ";
+            this.label2.Text = "Book Management";
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.btnQLSach);
             this.panel1.Location = new System.Drawing.Point(112, 112);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(253, 256);
@@ -110,7 +111,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.btnQLDocGia);
             this.panel2.Location = new System.Drawing.Point(538, 112);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(253, 256);
@@ -121,29 +122,30 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label3.Location = new System.Drawing.Point(49, 214);
+            this.label3.Location = new System.Drawing.Point(18, 214);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(166, 24);
+            this.label3.Size = new System.Drawing.Size(221, 24);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Quản lý độc giả";
+            this.label3.Text = "Reader Management";
             // 
-            // button2
+            // btnQLDocGia
             // 
-            this.button2.BackColor = System.Drawing.Color.MintCream;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.ImageIndex = 2;
-            this.button2.ImageList = this.imageList1;
-            this.button2.Location = new System.Drawing.Point(33, 20);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(180, 180);
-            this.button2.TabIndex = 1;
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnQLDocGia.BackColor = System.Drawing.Color.MintCream;
+            this.btnQLDocGia.FlatAppearance.BorderSize = 0;
+            this.btnQLDocGia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQLDocGia.ImageIndex = 2;
+            this.btnQLDocGia.ImageList = this.imageList1;
+            this.btnQLDocGia.Location = new System.Drawing.Point(33, 20);
+            this.btnQLDocGia.Name = "btnQLDocGia";
+            this.btnQLDocGia.Size = new System.Drawing.Size(180, 180);
+            this.btnQLDocGia.TabIndex = 1;
+            this.btnQLDocGia.UseVisualStyleBackColor = false;
+            this.btnQLDocGia.Click += new System.EventHandler(this.btnQLDocGia_Click);
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.button3);
+            this.panel3.Controls.Add(this.btnQLNhanVien);
             this.panel3.Location = new System.Drawing.Point(112, 416);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(253, 256);
@@ -154,29 +156,30 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label4.Location = new System.Drawing.Point(29, 214);
+            this.label4.Location = new System.Drawing.Point(4, 214);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(193, 24);
+            this.label4.Size = new System.Drawing.Size(246, 24);
             this.label4.TabIndex = 2;
-            this.label4.Text = "Quản lý nhân viên";
+            this.label4.Text = "Employee Management";
             // 
-            // button3
+            // btnQLNhanVien
             // 
-            this.button3.BackColor = System.Drawing.Color.MintCream;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.ImageIndex = 3;
-            this.button3.ImageList = this.imageList1;
-            this.button3.Location = new System.Drawing.Point(33, 20);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(180, 180);
-            this.button3.TabIndex = 1;
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnQLNhanVien.BackColor = System.Drawing.Color.MintCream;
+            this.btnQLNhanVien.FlatAppearance.BorderSize = 0;
+            this.btnQLNhanVien.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQLNhanVien.ImageIndex = 3;
+            this.btnQLNhanVien.ImageList = this.imageList1;
+            this.btnQLNhanVien.Location = new System.Drawing.Point(33, 20);
+            this.btnQLNhanVien.Name = "btnQLNhanVien";
+            this.btnQLNhanVien.Size = new System.Drawing.Size(180, 180);
+            this.btnQLNhanVien.TabIndex = 1;
+            this.btnQLNhanVien.UseVisualStyleBackColor = false;
+            this.btnQLNhanVien.Click += new System.EventHandler(this.btnQLNhanVien_Click);
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.label5);
-            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.QLMuonTra);
             this.panel4.Location = new System.Drawing.Point(538, 416);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(253, 256);
@@ -187,24 +190,24 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label5.Location = new System.Drawing.Point(29, 214);
+            this.label5.Location = new System.Drawing.Point(18, 214);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(195, 24);
+            this.label5.Size = new System.Drawing.Size(220, 24);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Quản lý mượn -trả";
+            this.label5.Text = "Library Management";
             // 
-            // button4
+            // QLMuonTra
             // 
-            this.button4.BackColor = System.Drawing.Color.MintCream;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ImageIndex = 1;
-            this.button4.ImageList = this.imageList1;
-            this.button4.Location = new System.Drawing.Point(33, 20);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(180, 180);
-            this.button4.TabIndex = 1;
-            this.button4.UseVisualStyleBackColor = false;
+            this.QLMuonTra.BackColor = System.Drawing.Color.MintCream;
+            this.QLMuonTra.FlatAppearance.BorderSize = 0;
+            this.QLMuonTra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.QLMuonTra.ImageIndex = 1;
+            this.QLMuonTra.ImageList = this.imageList1;
+            this.QLMuonTra.Location = new System.Drawing.Point(33, 20);
+            this.QLMuonTra.Name = "QLMuonTra";
+            this.QLMuonTra.Size = new System.Drawing.Size(180, 180);
+            this.QLMuonTra.TabIndex = 1;
+            this.QLMuonTra.UseVisualStyleBackColor = false;
             // 
             // exit
             // 
@@ -213,9 +216,9 @@
             this.exit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.exit.Image = ((System.Drawing.Image)(resources.GetObject("exit.Image")));
             this.exit.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.exit.Location = new System.Drawing.Point(840, 9);
+            this.exit.Location = new System.Drawing.Point(867, 9);
             this.exit.Name = "exit";
-            this.exit.Size = new System.Drawing.Size(73, 78);
+            this.exit.Size = new System.Drawing.Size(46, 48);
             this.exit.TabIndex = 1;
             this.exit.UseVisualStyleBackColor = false;
             this.exit.Click += new System.EventHandler(this.btnExit);
@@ -251,19 +254,19 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnQLSach;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnQLDocGia;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnQLNhanVien;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button QLMuonTra;
         private System.Windows.Forms.Button exit;
     }
 }

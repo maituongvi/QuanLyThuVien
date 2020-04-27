@@ -19,18 +19,9 @@ namespace QuanLyThuVien_MTV
 
         private void QLNhanVien_Load(object sender, EventArgs e)
         {
-            HienThiNV();
-            LoadCPBangCap();
-        }
-
-        NhanVien1 nv = new NhanVien1();
-
-        // Load list view Nhan Vien
-        void HienThiNV()
-        {
             lvNV.FullRowSelect = true; //cho phép chọn 1 dòng
             lvNV.View = View.Details; //cho phép hiển thị thông tin chi tiết dạng bảng
-           
+
 
             lvNV.View = View.Details;
             //so cot cua LV
@@ -40,6 +31,16 @@ namespace QuanLyThuVien_MTV
             lvNV.Columns.Add("Địa chỉ", 200);
             lvNV.Columns.Add("Điện thoại", 100);
             lvNV.Columns.Add("Bằng Câp", 100);
+            HienThiNV();
+            LoadCPBangCap();
+        }
+
+        NhanVien1 nv = new NhanVien1();
+
+        // Load list view Nhan Vien
+        void HienThiNV()
+        {
+            
 
             foreach (NhanVien e in nv.layDSNhanVien())
             {
@@ -85,17 +86,13 @@ namespace QuanLyThuVien_MTV
 
         private bool checkNhapDuLieu()
         {
-            if (txtTen == null)
-                return false;
-            else if (dpNgaySinh.Text == null)
-                return false;
-            else if (txtDiaChi == null)
-                return false;
-            else if (txtSdt == null)
-                return false;
-            else if (cbBangCap.SelectedItem == null)
-                return false;
-            else return true;
+            if (String.IsNullOrEmpty(txtTen.Text))
+                return true;
+            else if (String.IsNullOrEmpty(txtDiaChi.Text))
+                return true;
+            else if (String.IsNullOrEmpty(txtSdt.Text))
+                return true;
+            else return false;
 
         }
 
@@ -109,7 +106,7 @@ namespace QuanLyThuVien_MTV
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            if (checkNhapDuLieu() == true)
+            if (!checkNhapDuLieu() )
             {
                 nv.ThemNV(txtTen.Text, dpNgaySinh.Value.ToShortDateString(),
                     txtDiaChi.Text, txtSdt.Text, cbBangCap.SelectedIndex +1);
