@@ -31,28 +31,27 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.cbBangCap = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtSdt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dpNgaySinh = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTen = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.btnZw = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnQuayLai = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.gvNhanVien = new System.Windows.Forms.DataGridView();
+            this.lvNV = new System.Windows.Forms.ListView();
             this.groupBox1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -61,7 +60,6 @@
             this.panel1.SuspendLayout();
             this.panel6.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gvNhanVien)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -93,12 +91,21 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.comboBox1);
+            this.panel5.Controls.Add(this.cbBangCap);
             this.panel5.Controls.Add(this.label6);
             this.panel5.Location = new System.Drawing.Point(800, 55);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(313, 44);
             this.panel5.TabIndex = 0;
+            // 
+            // cbBangCap
+            // 
+            this.cbBangCap.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbBangCap.FormattingEnabled = true;
+            this.cbBangCap.Location = new System.Drawing.Point(108, 9);
+            this.cbBangCap.Name = "cbBangCap";
+            this.cbBangCap.Size = new System.Drawing.Size(188, 29);
+            this.cbBangCap.TabIndex = 1;
             // 
             // label6
             // 
@@ -113,21 +120,21 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.textBox4);
+            this.panel4.Controls.Add(this.txtSdt);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Location = new System.Drawing.Point(428, 94);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(313, 44);
             this.panel4.TabIndex = 0;
             // 
-            // textBox4
+            // txtSdt
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(108, 6);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(193, 30);
-            this.textBox4.TabIndex = 1;
+            this.txtSdt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSdt.Location = new System.Drawing.Point(108, 6);
+            this.txtSdt.Multiline = true;
+            this.txtSdt.Name = "txtSdt";
+            this.txtSdt.Size = new System.Drawing.Size(193, 30);
+            this.txtSdt.TabIndex = 1;
             // 
             // label5
             // 
@@ -142,21 +149,21 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.txtDiaChi);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(428, 33);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(313, 44);
             this.panel3.TabIndex = 0;
             // 
-            // textBox3
+            // txtDiaChi
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(108, 6);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(193, 30);
-            this.textBox3.TabIndex = 1;
+            this.txtDiaChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDiaChi.Location = new System.Drawing.Point(108, 6);
+            this.txtDiaChi.Multiline = true;
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(193, 30);
+            this.txtDiaChi.TabIndex = 1;
             // 
             // label4
             // 
@@ -171,20 +178,20 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.dateTimePicker1);
+            this.panel2.Controls.Add(this.dpNgaySinh);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(44, 94);
+            this.panel2.Location = new System.Drawing.Point(7, 94);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(339, 44);
+            this.panel2.Size = new System.Drawing.Size(376, 44);
             this.panel2.TabIndex = 0;
             // 
-            // dateTimePicker1
+            // dpNgaySinh
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(122, 9);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
-            this.dateTimePicker1.TabIndex = 1;
+            this.dpNgaySinh.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dpNgaySinh.Location = new System.Drawing.Point(122, 10);
+            this.dpNgaySinh.Name = "dpNgaySinh";
+            this.dpNgaySinh.Size = new System.Drawing.Size(237, 26);
+            this.dpNgaySinh.TabIndex = 1;
             // 
             // label2
             // 
@@ -199,22 +206,22 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtTen);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(44, 33);
+            this.panel1.Location = new System.Drawing.Point(7, 33);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(339, 44);
+            this.panel1.Size = new System.Drawing.Size(376, 44);
             this.panel1.TabIndex = 0;
             // 
-            // textBox1
+            // txtTen
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(94, 6);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(228, 30);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Mai Tường Vi";
+            this.txtTen.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTen.Location = new System.Drawing.Point(122, 6);
+            this.txtTen.Multiline = true;
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(237, 30);
+            this.txtTen.TabIndex = 1;
+            this.txtTen.Text = "Mai Tường Vi";
             // 
             // label3
             // 
@@ -227,90 +234,72 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Name";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(108, 9);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(188, 29);
-            this.comboBox1.TabIndex = 1;
-            // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.button4);
-            this.panel6.Controls.Add(this.button3);
-            this.panel6.Controls.Add(this.button2);
-            this.panel6.Controls.Add(this.button1);
-            this.panel6.Controls.Add(this.btnZw);
+            this.panel6.Controls.Add(this.btnQuayLai);
+            this.panel6.Controls.Add(this.btnXoa);
+            this.panel6.Controls.Add(this.btnSua);
+            this.panel6.Controls.Add(this.btnThem);
             this.panel6.Location = new System.Drawing.Point(32, 246);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(1188, 66);
             this.panel6.TabIndex = 2;
             // 
-            // btnZw
+            // btnQuayLai
             // 
-            this.btnZw.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btnZw.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZw.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnZw.Location = new System.Drawing.Point(49, 13);
-            this.btnZw.Name = "btnZw";
-            this.btnZw.Size = new System.Drawing.Size(131, 40);
-            this.btnZw.TabIndex = 0;
-            this.btnZw.Text = "Watch";
-            this.btnZw.UseVisualStyleBackColor = false;
+            this.btnQuayLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnQuayLai.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQuayLai.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnQuayLai.Location = new System.Drawing.Point(928, 13);
+            this.btnQuayLai.Name = "btnQuayLai";
+            this.btnQuayLai.Size = new System.Drawing.Size(131, 40);
+            this.btnQuayLai.TabIndex = 0;
+            this.btnQuayLai.Text = "Back";
+            this.btnQuayLai.UseVisualStyleBackColor = false;
+            this.btnQuayLai.Click += new System.EventHandler(this.btnQuayLai_Click);
             // 
-            // button1
+            // btnXoa
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(302, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(131, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Insert";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnXoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnXoa.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnXoa.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnXoa.Location = new System.Drawing.Point(652, 13);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(131, 40);
+            this.btnXoa.TabIndex = 0;
+            this.btnXoa.Text = "Delete";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
-            // button2
+            // btnSua
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(556, 13);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(131, 40);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "Update";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSua.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSua.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSua.Location = new System.Drawing.Point(370, 13);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(131, 40);
+            this.btnSua.TabIndex = 0;
+            this.btnSua.Text = "Update";
+            this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
-            // button3
+            // btnThem
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button3.Location = new System.Drawing.Point(800, 13);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(131, 40);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "Delete";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.button4.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button4.Location = new System.Drawing.Point(1019, 13);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(131, 40);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "Back";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnThem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnThem.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThem.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnThem.Location = new System.Drawing.Point(91, 13);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(131, 40);
+            this.btnThem.TabIndex = 0;
+            this.btnThem.Text = "Insert";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.gvNhanVien);
+            this.groupBox2.Controls.Add(this.lvNV);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.groupBox2.Location = new System.Drawing.Point(32, 345);
@@ -320,14 +309,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Genaral Information";
             // 
-            // gvNhanVien
+            // lvNV
             // 
-            this.gvNhanVien.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gvNhanVien.Location = new System.Drawing.Point(6, 22);
-            this.gvNhanVien.Name = "gvNhanVien";
-            this.gvNhanVien.RowTemplate.Height = 24;
-            this.gvNhanVien.Size = new System.Drawing.Size(1176, 375);
-            this.gvNhanVien.TabIndex = 0;
+            this.lvNV.HideSelection = false;
+            this.lvNV.Location = new System.Drawing.Point(7, 22);
+            this.lvNV.Name = "lvNV";
+            this.lvNV.Size = new System.Drawing.Size(1175, 375);
+            this.lvNV.TabIndex = 0;
+            this.lvNV.UseCompatibleStateImageBehavior = false;
+            this.lvNV.View = System.Windows.Forms.View.Details;
+            this.lvNV.SelectedIndexChanged += new System.EventHandler(this.lvNV_SelectedIndexChanged);
             // 
             // QLNhanVien
             // 
@@ -355,7 +346,6 @@
             this.panel1.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.gvNhanVien)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -366,27 +356,26 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTen;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtSdt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dpNgaySinh;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbBangCap;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnZw;
+        private System.Windows.Forms.Button btnQuayLai;
+        private System.Windows.Forms.Button btnXoa;
+        private System.Windows.Forms.Button btnSua;
+        private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.DataGridView gvNhanVien;
+        private System.Windows.Forms.ListView lvNV;
     }
 }
