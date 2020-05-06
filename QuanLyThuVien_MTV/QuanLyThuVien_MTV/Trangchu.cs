@@ -46,5 +46,13 @@ namespace QuanLyThuVien_MTV
             form1.Show();
             this.Hide();
         }
+
+        private void QLMuonTra_Click(object sender, EventArgs e)
+        {
+            QLMuon form1 = new QLMuon();
+            form1.Region = this.Region;
+            form1.Show();
+            this.Hide();
+        }
     }
 }

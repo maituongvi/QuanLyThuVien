@@ -67,7 +67,8 @@ namespace QuanLyThuVien_MTV
 
         public IEnumerable<Sach> timKiemSach(string kw)
         {
-            IEnumerable<Sach> kqSearch = qltvDB.GetTable<Sach>().Where(p => p.TenSach.Contains(kw));
+            IEnumerable<Sach> kqSearch = qltvDB.GetTable<Sach>().Where(p => p.TenSach.Contains(kw) || 
+                                                                       p.TacGia.Contains(kw) || p.NhaXuatBan.Contains(kw));
             return kqSearch;
         }
     }

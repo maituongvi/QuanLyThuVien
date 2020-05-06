@@ -208,6 +208,7 @@
             this.QLMuonTra.Size = new System.Drawing.Size(180, 180);
             this.QLMuonTra.TabIndex = 1;
             this.QLMuonTra.UseVisualStyleBackColor = false;
+            this.QLMuonTra.Click += new System.EventHandler(this.QLMuonTra_Click);
             // 
             // exit
             // 
