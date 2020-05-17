@@ -31,5 +31,13 @@ namespace QuanLyThuVien_MTV
             return p;
 
         }
+
+        public PhieuMuonSach TimPhieuMuonSachCuaDocGia(int maDocGia)
+        {
+
+            PhieuMuonSach p = qltvDB.PhieuMuonSaches.OrderByDescending(s=>s.NgayMuon).FirstOrDefault(s => s.MaDocGia.Equals(maDocGia));
+            return p;
+
+        }
     }
 }

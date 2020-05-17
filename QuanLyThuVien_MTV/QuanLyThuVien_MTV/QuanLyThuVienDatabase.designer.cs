@@ -498,6 +498,8 @@ namespace QuanLyThuVien_MTV
 		
 		private int _MaPhieuMuon;
 		
+		private System.Nullable<System.DateTime> _ngayTra;
+		
 		private EntityRef<Sach> _Sach;
 		
 		private EntityRef<PhieuMuonSach> _PhieuMuonSach;
@@ -510,6 +512,8 @@ namespace QuanLyThuVien_MTV
     partial void OnMaSachChanged();
     partial void OnMaPhieuMuonChanging(int value);
     partial void OnMaPhieuMuonChanged();
+    partial void OnngayTraChanging(System.Nullable<System.DateTime> value);
+    partial void OnngayTraChanged();
     #endregion
 		
 		public ChiTietPhieuMuon()
@@ -563,6 +567,26 @@ namespace QuanLyThuVien_MTV
 					this._MaPhieuMuon = value;
 					this.SendPropertyChanged("MaPhieuMuon");
 					this.OnMaPhieuMuonChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ngayTra", DbType="DateTime")]
+		public System.Nullable<System.DateTime> ngayTra
+		{
+			get
+			{
+				return this._ngayTra;
+			}
+			set
+			{
+				if ((this._ngayTra != value))
+				{
+					this.OnngayTraChanging(value);
+					this.SendPropertyChanging();
+					this._ngayTra = value;
+					this.SendPropertyChanged("ngayTra");
+					this.OnngayTraChanged();
 				}
 			}
 		}

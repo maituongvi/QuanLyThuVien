@@ -51,8 +51,6 @@
             this.txtTacGia = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.hienThiThongTinDG = new System.Windows.Forms.Button();
-            this.btnDG = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -64,15 +62,15 @@
             this.txtTenDG = new System.Windows.Forms.TextBox();
             this.lvSach = new System.Windows.Forms.ListView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btnBack = new System.Windows.Forms.PictureBox();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.pbSearch = new System.Windows.Forms.PictureBox();
+            this.btnBack = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             this.txtTimKiem.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSearch)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -313,8 +311,6 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(0)))), ((int)(((byte)(77)))));
-            this.groupBox1.Controls.Add(this.hienThiThongTinDG);
-            this.groupBox1.Controls.Add(this.btnDG);
             this.groupBox1.Controls.Add(this.panel7);
             this.groupBox1.Controls.Add(this.panel5);
             this.groupBox1.Controls.Add(this.panel6);
@@ -332,28 +328,6 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Độc giả";
-            // 
-            // hienThiThongTinDG
-            // 
-            this.hienThiThongTinDG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.hienThiThongTinDG.Location = new System.Drawing.Point(22, 244);
-            this.hienThiThongTinDG.Name = "hienThiThongTinDG";
-            this.hienThiThongTinDG.Size = new System.Drawing.Size(129, 34);
-            this.hienThiThongTinDG.TabIndex = 0;
-            this.hienThiThongTinDG.Text = "LoadInform";
-            this.hienThiThongTinDG.UseVisualStyleBackColor = false;
-            this.hienThiThongTinDG.Click += new System.EventHandler(this.hienThiThongTinDG_Click);
-            // 
-            // btnDG
-            // 
-            this.btnDG.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(0)))), ((int)(((byte)(51)))));
-            this.btnDG.Location = new System.Drawing.Point(185, 244);
-            this.btnDG.Name = "btnDG";
-            this.btnDG.Size = new System.Drawing.Size(107, 34);
-            this.btnDG.TabIndex = 0;
-            this.btnDG.Text = "Select";
-            this.btnDG.UseVisualStyleBackColor = false;
-            this.btnDG.Click += new System.EventHandler(this.btnDG_Click);
             // 
             // panel7
             // 
@@ -475,17 +449,6 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Looking up - Book";
             // 
-            // btnBack
-            // 
-            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
-            this.btnBack.Location = new System.Drawing.Point(1136, 12);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(32, 30);
-            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnBack.TabIndex = 4;
-            this.btnBack.TabStop = false;
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Microsoft Tai Le", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -505,6 +468,17 @@
             this.pbSearch.TabIndex = 4;
             this.pbSearch.TabStop = false;
             this.pbSearch.Click += new System.EventHandler(this.pbSearch_Click);
+            // 
+            // btnBack
+            // 
+            this.btnBack.Image = ((System.Drawing.Image)(resources.GetObject("btnBack.Image")));
+            this.btnBack.Location = new System.Drawing.Point(1136, 12);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(32, 30);
+            this.btnBack.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnBack.TabIndex = 4;
+            this.btnBack.TabStop = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // QLMuon
             // 
@@ -527,8 +501,8 @@
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSearch)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnBack)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -543,7 +517,6 @@
         private System.Windows.Forms.ListView lvSach;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.PictureBox pbSearch;
-        private System.Windows.Forms.Button btnDG;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
@@ -572,7 +545,6 @@
         private System.Windows.Forms.Button btnMuon;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button hienThiThongTinDG;
         private System.Windows.Forms.PictureBox btnBack;
     }
 }

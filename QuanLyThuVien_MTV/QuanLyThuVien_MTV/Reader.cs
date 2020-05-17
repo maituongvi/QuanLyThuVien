@@ -69,5 +69,11 @@ namespace QuanLyThuVien_MTV
             IEnumerable<DocGia> kqSearch = qltvDB.GetTable<DocGia>().Where(p => p.HoTenDocGia.Contains(kw) || p.Email.Contains(kw) ||p.DiaChi.Contains(kw));
             return kqSearch;
         }
+
+        public DocGia timKiemDocGiaTheoMa(int ma)
+        {
+            DocGia p = qltvDB.DocGias.FirstOrDefault(s => s.MaDocGia.Equals(ma));
+            return p;
+        }
     }
 }

@@ -46,29 +46,29 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbNgaySinh = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.lbMa = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lbTen = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lvDG = new System.Windows.Forms.ListView();
             this.panel4 = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.pbSearch = new System.Windows.Forms.PictureBox();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.lbMa = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.lvDG = new System.Windows.Forms.ListView();
             this.groupBox1.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSearch)).BeginInit();
-            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -82,7 +82,7 @@
             this.groupBox1.Controls.Add(this.panel8);
             this.groupBox1.Controls.Add(this.panel1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(13, 138);
+            this.groupBox1.Location = new System.Drawing.Point(12, 138);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(413, 575);
             this.groupBox1.TabIndex = 0;
@@ -244,6 +244,35 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Date of Birth";
             // 
+            // panel8
+            // 
+            this.panel8.Controls.Add(this.lbMa);
+            this.panel8.Controls.Add(this.label12);
+            this.panel8.Location = new System.Drawing.Point(9, 21);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(376, 44);
+            this.panel8.TabIndex = 1;
+            // 
+            // lbMa
+            // 
+            this.lbMa.AutoSize = true;
+            this.lbMa.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMa.Location = new System.Drawing.Point(135, 10);
+            this.lbMa.Name = "lbMa";
+            this.lbMa.Size = new System.Drawing.Size(0, 21);
+            this.lbMa.TabIndex = 1;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Teal;
+            this.label12.Location = new System.Drawing.Point(14, 9);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(109, 22);
+            this.label12.TabIndex = 0;
+            this.label12.Text = "Reader code";
+            // 
             // panel1
             // 
             this.panel1.Controls.Add(this.lbTen);
@@ -284,6 +313,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "General Infromation";
             // 
+            // lvDG
+            // 
+            this.lvDG.HideSelection = false;
+            this.lvDG.Location = new System.Drawing.Point(7, 22);
+            this.lvDG.Name = "lvDG";
+            this.lvDG.Size = new System.Drawing.Size(624, 662);
+            this.lvDG.TabIndex = 0;
+            this.lvDG.UseCompatibleStateImageBehavior = false;
+            this.lvDG.SelectedIndexChanged += new System.EventHandler(this.lvDG_SelectedIndexChanged_1);
+            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.listView1);
@@ -322,50 +361,11 @@
             this.txtTimKiem.Size = new System.Drawing.Size(356, 29);
             this.txtTimKiem.TabIndex = 0;
             // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.lbMa);
-            this.panel8.Controls.Add(this.label12);
-            this.panel8.Location = new System.Drawing.Point(9, 21);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(376, 44);
-            this.panel8.TabIndex = 1;
-            // 
-            // lbMa
-            // 
-            this.lbMa.AutoSize = true;
-            this.lbMa.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMa.Location = new System.Drawing.Point(135, 10);
-            this.lbMa.Name = "lbMa";
-            this.lbMa.Size = new System.Drawing.Size(0, 21);
-            this.lbMa.TabIndex = 1;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Tai Le", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Teal;
-            this.label12.Location = new System.Drawing.Point(14, 9);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(109, 22);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "Reader code";
-            // 
-            // lvDG
-            // 
-            this.lvDG.HideSelection = false;
-            this.lvDG.Location = new System.Drawing.Point(7, 22);
-            this.lvDG.Name = "lvDG";
-            this.lvDG.Size = new System.Drawing.Size(624, 662);
-            this.lvDG.TabIndex = 0;
-            this.lvDG.UseCompatibleStateImageBehavior = false;
-            this.lvDG.SelectedIndexChanged += new System.EventHandler(this.lvDG_SelectedIndexChanged_1);
-            // 
             // TimKiemDocGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1095, 725);
+            this.ClientSize = new System.Drawing.Size(1105, 725);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -383,14 +383,14 @@
             this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbSearch)).EndInit();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.ResumeLayout(false);
 
         }

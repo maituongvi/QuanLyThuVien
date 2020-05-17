@@ -49,7 +49,7 @@ namespace QuanLyThuVien_MTV
 
         private void QLMuonTra_Click(object sender, EventArgs e)
         {
-            QLMuon form1 = new QLMuon();
+            QLTra form1 = new QLTra();
             form1.Region = this.Region;
             form1.Show();
             this.Hide();

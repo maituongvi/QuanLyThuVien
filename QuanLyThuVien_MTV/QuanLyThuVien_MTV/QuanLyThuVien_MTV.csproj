@@ -77,6 +77,12 @@
     <Compile Include="QLSach.Designer.cs">
       <DependentUpon>QLSach.cs</DependentUpon>
     </Compile>
+    <Compile Include="QLTra.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QLTra.Designer.cs">
+      <DependentUpon>QLTra.cs</DependentUpon>
+    </Compile>
     <Compile Include="QuanLyThuVienDatabase.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -108,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="QLSach.resx">
       <DependentUpon>QLSach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QLTra.resx">
+      <DependentUpon>QLTra.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TimKiemDocGia.resx">
       <DependentUpon>TimKiemDocGia.cs</DependentUpon>

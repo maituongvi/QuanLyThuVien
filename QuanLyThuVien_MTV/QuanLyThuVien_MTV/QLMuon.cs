@@ -23,6 +23,11 @@ namespace QuanLyThuVien_MTV
 
         private void QLMuon_Load(object sender, EventArgs e)
         {
+            txtMaDG.Text = maDG;
+            txtTenDG.Text = tenDG;
+            txtEmailDG.Text = email;
+
+
             lvSach.FullRowSelect = true; //cho phép chọn 1 dòng
             lvSach.View = View.Details; //cho phép hiển thị thông tin chi tiết dạng bảng
 
@@ -58,17 +63,6 @@ namespace QuanLyThuVien_MTV
             }
         }
 
-        private void btnDG_Click(object sender, EventArgs e)
-        {
-          
-            
-                TimKiemDocGia temp1 = new TimKiemDocGia();
-                temp1.Region = this.Region;
-                temp1.Show();
-                this.Hide();
-            
-
-        }
 
         private void pbSearch_Click(object sender, EventArgs e)
         {
@@ -128,24 +122,11 @@ namespace QuanLyThuVien_MTV
             }
         }
 
-        private void hienThiThongTinDG_Click(object sender, EventArgs e)
-        {
-            if (String.IsNullOrEmpty(maDG))
-            {
-                MessageBox.Show("Vui lòng Select thông tin độc giả trước!");
-            }
-            else
-            {
-                txtMaDG.Text = maDG;
-                txtTenDG.Text = tenDG;
-                txtEmailDG.Text = email;
-
-            }
-        }
+        
 
         private void btnBack_Click(object sender, EventArgs e)
         {
-            Trangchu temp1 = new Trangchu();
+            QLTra temp1 = new QLTra();
             temp1.Region = this.Region;
             temp1.Show();
             this.Hide();

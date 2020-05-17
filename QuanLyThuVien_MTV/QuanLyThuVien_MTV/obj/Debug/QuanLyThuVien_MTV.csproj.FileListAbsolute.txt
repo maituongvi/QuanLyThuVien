@@ -13,3 +13,4 @@ D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\
 D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.QLSach.resources
 D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.QLMuon.resources
 D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.TimKiemDocGia.resources
+D:\Studying\Lập trình cơ sở dữ liệu\Bài tập Quản Lý Thư Viện\Quản Lý Thư Viện\QuanLyThuVien\QuanLyThuVien_MTV\QuanLyThuVien_MTV\obj\Debug\QuanLyThuVien_MTV.QLTra.resources

@@ -23,6 +23,7 @@
     <Type Name="ChiTietPhieuMuon">
       <Column Name="MaSach" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="MaPhieuMuon" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ngayTra" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Association Name="Sach_ChiTietPhieuMuon" Member="Sach" ThisKey="MaSach" OtherKey="MaSach" Type="Sach" IsForeignKey="true" />
       <Association Name="PhieuMuonSach_ChiTietPhieuMuon" Member="PhieuMuonSach" ThisKey="MaPhieuMuon" OtherKey="MaPhieuMuon" Type="PhieuMuonSach" IsForeignKey="true" />
     </Type>

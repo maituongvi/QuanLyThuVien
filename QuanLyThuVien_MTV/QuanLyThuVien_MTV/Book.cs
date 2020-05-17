@@ -71,5 +71,11 @@ namespace QuanLyThuVien_MTV
                                                                        p.TacGia.Contains(kw) || p.NhaXuatBan.Contains(kw));
             return kqSearch;
         }
+
+        public Sach timSachTheoMa(int ma)
+        {
+            Sach s = qltvDB.Saches.FirstOrDefault(p => p.MaSach.Equals(ma));
+            return s;
+        }
     }
 }
